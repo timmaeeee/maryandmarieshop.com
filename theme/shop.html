@@ -1,0 +1,68 @@
+<!--/
+	Cartching Theme | Generic
+    Copyright (c) Cartching, 2011
+    http://cartching.com
+/-->
+
+<!-- #EXTENDS file="theme-simple.html" -->
+
+
+<!-- #BLOCK for="pagetitle_area" -->
+<!-- #ENDBLOCK -->
+
+
+
+<!-- #BLOCK for="content_area" -->
+
+
+      <!-- #IF {{snippets.shop-page-callout}} -->
+    
+            <div class="list_carousel shop-page-carousel">
+                <div id="shop-page-carousel">
+                    {{snippets.shop-page-callout}}
+                </div>
+    
+                <div class="clearfix"></div>
+  
+                <div class="pagination" id="pagination"></div>
+    
+            </div>
+    
+        <!-- #ELSE -->
+    
+            <!--
+// SNIPET - Home Page Callout ..... Image Slider
+// Instructions.
+// - Add Links, Images / <p><a href="http://"><img src="http://" alt="" title="" /></a></p>
+-->
+    
+        <!-- #ENDIF -->
+
+
+	<div id="bottomleft" class="bottomleft"><a href="http://www.maryandmarieshop.com/category/everything" target="_self" border="0"><img src="http://dl.dropbox.com/u/24245867/m_m/home-left.jpg" alt="our current range" class="homeimg" border="0" /></a></div>
+    <div id="middlehome" class="middlehome"><a href="http://www.facebook.com/" target="_self" border="0"><img src="http://dl.dropbox.com/u/24245867/m_m/home-middle.jpg" alt="like us on facebook to win" class="homeimg" border="0" /></a></div>
+    <div id="bottomright" class="bottomright"><a href="http://dl.dropbox.com/u/24245867/m_m/M%26M%20FINAL_Email.pdf" target="_blank" border="0"><img src="http://dl.dropbox.com/u/24245867/m_m/home-right.jpg" alt="view our lookbook" class="homeimg" border="0" /></a></div>
+	
+ 
+
+<!-- #ENDBLOCK -->
+
+<!-- #BLOCK for="script_content" -->
+
+<!-- #IF {{snippets.shop-page-callout}} -->
+    <script type="text/javascript" language="javascript" src="/themes/blogger-lite/files/jquery.carouFredSel-4.3.3-packed.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(function() {
+          $("#shop-page-carousel").carouFredSel({
+   scroll: {
+       fx: "crossfade",
+	   start: "random",
+	   pauseDuration: 5000,
+	   pauseOnHover: true,
+  			 }
+			});
+       });
+    </script>
+<!-- #ENDIF -->
+
+<!-- #ENDBLOCK -->

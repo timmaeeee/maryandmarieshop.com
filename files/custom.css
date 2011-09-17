@@ -1,0 +1,349 @@
+/*
+#
+#	Custom Css Template Override
+#	helm.merchfly.com
+#
+*/
+
+html body { background:#FFFFFF; 
+			font:"Georgia", Times New Roman, Times, serif;
+ }
+
+/* Logo */
+div#logo { margin-top:8px; margin-bottom:2px; margin-left:0px; margin-right:0px; }
+div#logo h2 a { background:url(http://www.maryandmarieshop.com/files/marymarie-logo.jpg) no-repeat top center; display:block; height:150px; text-indent:-9000px; }
+div#logo p { display:none; }
+
+/* Nav */
+div.nav_area { overflow:auto; margin-left:auto; margin-right:auto; padding:0px; width:960px; border-bottom: 1px dashed #CCCCCC; }
+div#nav { margin-left:auto; margin-right:auto; position:relative; width:960px; height:20px; }
+div#nav div.container { margin-left:auto; margin-right:auto; border:none; padding:0px; }
+
+div#nav ul.nav-links li { display:block; font-size:16px; font-style:oblique; text-transform:lowercase; letter-spacing:0.25em; font-weight:normal; border-left:1px solid #CCC; padding:0px; }
+div#nav ul.nav-links li:first-child { margin-left:285px; border-left:0px solid #CCC; }
+div#nav ul.nav-links li a { color:#000; margin-left:10px; margin-right:10px; padding-top:0px; padding-bottom:0px; padding-left:8px; padding-right:8px; }
+div#nav ul.nav-links li a:hover,
+div#nav ul.nav-links li a.active { color:#fff; background: #000; }
+div#nav ul.nav-links li a.active { background: #000; }
+
+/* Content */
+div.content_area { overflow:none; margin:0; padding:5px 0; background:#fff; }
+div#content div.container { border:none; padding:0px;}
+
+div#content,
+div.page { margin:0 auto; position:relative; width:960px; }
+
+/* Page Title */
+div.pagetitle_area { display:block; overflow: none; margin:0; width:auto; background:#fff; }
+div#pagetitle { margin:0 auto; position:relative; border-bottom: 1px dashed #CCCCCC; height:140px; }
+div#pagetitle div.container { margin-left:10px; margin-right:5px; }
+
+div.pagetitle_area_cart { display:block; overflow: none; margin:0; width:auto; }
+div#pagetitle_cart { margin:0 auto; position:relative; border-bottom: 1px dashed #CCCCCC; height:140px; background: url(http://dl.dropbox.com/u/24245867/m_m/categories/cart-heads.jpg) }
+div#pagetitle_cart div.container { margin-left:10px; margin-right:5px; }
+
+/* Page Message */
+div.pagemsg_area {  margin-left:auto; margin-right:auto; width:800px; z-index:100; }
+div#pagemsg { opacity:0.95;filter:alpha(opacity=95); }
+
+/* Footer */
+div#footer { margin-top:10px; border-bottom: 1px dashed #CCCCCC;  border-top: 1px dashed #CCCCCC; }
+div#footer div.container {   }
+/* Footer */
+div#footer div.addthis { float:right; margin-right:20px; }
+div#footer div.nav { margin-left:10px; margin-right:20px; color:#CCC; font-style:oblique; }
+div#footer div.nav li { display:block; float:left; margin-right:20px; }
+
+/* Page Fonts  */
+html body{color:#444; font-family: "Georgia", Times New Roman, Times, serif; font-size:12px;}
+table{font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+/* Base */
+h1 { line-height:1em; font-size:3em; margin:0 0 0.5em 0; }
+h2 { line-height:1em; font-size:2.15em; margin:0 0 1em 0; }
+h3 { font-size:1.1667em; line-height: 1.286em; margin:1.286em 0 1.286em 0; }
+h3.drop { font-size:1.1667em; line-height: 1.286em; margin:1.929em 0 0.643em 0; }
+h4, h5 { margin: 1.5em 0 0 0; font-size:1em; line-height:1.5em; }
+h6 { margin: 1.5em 0 0 0; font-size: 0.8333em; line-height:1.8em; }
+h1, h2, h3, h4, h5, h6 { font-family:font:"Georgia", Times New Roman, Times, serif; font-weight:bold; }
+p { font-size:1em; margin:0 0 1.5em 0; }
+strong { font-weight:bold; }
+em { font-style:italic; }
+u { text-decoration:underline;}
+blockquote { margin: 1em 3em; border-left: 2px solid #999; padding-left: 1em; }
+li { font-size:1em; }
+table td, table th { padding:3px; }
+p, blockquote, li, dd, dt, table td, table th { line-height: 1.5em; }
+i,em{font-style:oblique;}
+a{color:#333;}
+a:hover{color:#999; text-decoration:underline;}
+del{text-decoration:line-through; }
+hr {height:0.0833em;margin:1.667em 0;border:0 #ccc solid;border-top-width:1px;clear:both;}
+legend { font-size:18px; }
+li {zoom:1;}
+
+/* Theme */
+body { min-width:960px; background:#fff; text-align:center; }
+
+div.header_area,
+div.pagetitle_area,
+div.pagetitle_area_cart,
+div.pagemsg_area,
+div.content_area,
+div.footer_area,
+div.copyright_area { margin-left:auto; margin-right:auto; width:960px; position:relative; clear:both; text-align:left; }
+
+div#pagetitle,
+div#pagetitle_cart,
+div#pagemsg,
+div#content,
+div#aside,
+div#footer, 
+div#copyright { margin-bottom:10px; }
+
+div#header,
+div#pagetitle,
+div#pagetitle_cart,
+div#pagemsg,
+div#content,
+div#aside,
+div#footer, 
+div#copyright { margin-left:0px; margin-right:0px; position:relative; }
+
+div.page.has_aside div#content,
+div.page.has_aside div#aside { display:inline;float: left;position:relative; } 
+div.page.has_aside div#content { float:right; width:732px; }
+div#aside { width:210px; float:left; margin-right:5px; }
+
+/* home bits*/
+
+div.bottomleft { border:0px solid #FF9; width:312px; margin-right:12px; float:left; display:inline-block; margin-top: -10px;}
+div.middlehome { border:0px solid #999; width:312px; margin-right:0px; float:left; display:inline-block; margin-top: -10px;}
+div.bottomright { border:0px solid #333; width:312px; float:right; display:inline-block; margin-top: -10px;}
+
+
+/* ASide */
+div#aside h3 { margin-bottom:0; letter-spacing:-0.02; font-weight:normal; text-transform:uppercase; font-size:17px; font-style:oblique; font-family: "Georgia", Times New Roman, Times, serif; }
+div#aside li h5 { margin:0; }
+div#aside li { border-top:1px dotted #E9E9E9; color:#666; font-size:13px; padding:4px 2px; }
+div#aside li:first-child { border:none; }
+div#aside li li { border:none; padding:0 0 0 3px; list-style:disc; list-style-position:inside; }
+div#aside div.categories a.active { font-weight:bold; }
+div#userbar { float:left; font-size:0.9em; background-color: #0F3; }
+div#userbar.userbar signin { float:left; font-size:0.9em; background-color: #993; }
+div#userbar.userbar loggedin { float:left; font-size:0.9em; background-color: #993; }
+
+
+/* Cart Box */
+div.cart-summary { background-color: #000; margin-bottom:10px;  padding:20px; color: #FFF; }
+div.cart-summary h3 { margin-top:0; }
+div.cart-summary ul.buttons li { display:inline-block; float:left; border:none !important; padding:0 !important; }
+div.cart-summary ul.buttons li a { display:block; text-align:center; width:65px; font-size:11px; padding:3px 0; }
+div.cart-summary li a.viewcart { margin-right:10px; }
+
+/* Categories */
+div.categories { padding:20px; }
+div.categories h3 { margin-top:0; margin-bottom:10px; }
+
+/* Has No Items */
+div.hasnoitems { padding:40px; }
+div.hasnoitems h2 { margin:0; font-family: "Georgia", Times New Roman, Times, serif;}
+
+/* Page TItle */
+div#pagetitle h1 { font-family: "Georgia", Times New Roman, Times, serif; font-style:oblique; letter-spacing:0.10em; line-height:0.9; text-transform:lowercase; font-weight:normal; color:#FFF; }
+div#pagetitle_cart h1 { font-family: "Georgia", Times New Roman, Times, serif; font-style:oblique; letter-spacing:0.10em; line-height:0.9; text-transform:lowercase; font-weight:normal; color:#222; }
+div#pagetitle h2 { font-family: "Georgia", Times New Roman, Times, serif; font-style:oblique; letter-spacing:0.10em; line-height:0.9; text-transform:lowercase; font-weight:normal; color:#000; }
+div#pagetitle h1 { margin:0; padding:85px 15px; font-size:3.15em; }
+div#pagetitle_cart h1 { margin:0; padding:85px 15px; font-size:3.15em; }
+div#pagetitle h2 { margin-top:0px; margin-bottom:20px; margin-left:10px; font-size:1.5em; }
+
+
+
+
+div#content div.container,
+div#footer div.container,
+div.cart-summary,
+div.categories,
+div.post-nav,
+body.shop div.hasnoitems,
+body.category div.hasnoitems,
+div.product-item-info_area { border:0px solid #eee; }
+
+
+/* Category */
+div.category-description { margin-bottom:10px; margin-top:-151px; padding:0; overflow:hidden; width: 730px; height: 140px;  }
+
+/* Item */
+div.product-listitem { display:block; float:left; position:relative; margin:0px 12px 12px 0px; border:0px;  }
+div.product-listitem { width:350px; height:470px; background:#fff; border:0px; }
+
+
+/* Item Image */
+div.product-listitem div.product-photo { text-align: center; border:10px solid #eee; }
+div.product-listitem div.product-photo:hover { border-color: #666; }
+div.product-list div.product-photo { margin:6px 0 0 0px; height:395px; }
+div.product-listitem div.product-photo a { display:block; }
+
+/* Item Price */
+div.product-list p.price { display: block; background-color:#ffffff; float:right; color:#000; font-size:16px; font-style: oblique; font-weight:normal !important; padding:0px; margin: 0px 0 0 0px;}
+div.product-listitem:hover p.price { background-color:#ffffff; color:#999;}
+
+/* Item Quick Add */
+div.product-listitem form { float:right; margin-right:10px; }
+div.product-listitem button { padding:0; font-size:0.85em; }
+
+/* Item Title */
+/* Adjust Forms */
+div.product-listitem h4 { font-family: "Georgia", Times New Roman, Times, serif; font-size:13px; font-weight:bold; text-transform: uppercase; font-style:oblique; clear:both; border:0px; line-height:1.25em; margin:0px 0px 6px 0px}
+div.product-list h4 { margin:0px; border:0px;}
+
+/* Product Detailed Image */
+div.product-item div.product-photo { clear:both; text-align:center; }
+
+/* Product Thumbnails */
+div.product-photos { overflow:auto; margin-top:4px; padding-top:4px; border: none; }
+div.product-photos ul { margin:0 0px; }
+div.product-photos li { display:inline-block; float:left; margin-right:10px; margin-bottom:10px; margin-top:4px; }
+div.product-photos img { border:8px solid #eee; padding:1px; }
+div.product-photos img:hover { border-color:#ccc; }
+
+/* Add To Cart */
+div.product-add legend { display:none; }
+
+/* Added */
+div.product-add li { margin-bottom:0; padding:6px 10px; }
+div.product-add li label { margin-top:0; font-weight:bold; }
+
+/* Price */
+h2.price.retail { font-family: "Georgia", Times New Roman, Times, serif; margin-top: 2px; margin-bottom:0px; color: #000; font-weight:normal; font-style:italic;  }
+p.price.sale del { color:#CC4400; margin-top:-6px; }
+
+/* Product Details */
+div.product-add p.product-details { font-style:oblique; font-size:0.9em; }
+
+/* Product Variation */
+div.product-add fieldset { border-top:1px dashed #eee;  border-bottom:1px dashed #eee; padding-top:4px; padding-bottom:10px; }
+div.product-add ul { margin-top:0; }
+div.product-add li.variation span label { display:inline; margin:0 10px; }
+div.product-add li.variation span.soldout { color:#ccc; }
+div.product-add li.quantity input.text { width:24px; _width:40px; text-align:center; }
+div.product-add li.addtocart { padding-top:8px; }
+div.product-add li.addtocart button { float:left; display:inline-block; }
+div.product-add li.addtocart a.viewcart { display:inline-block; float:left; margin-top:6px; margin-left:20px; }
+
+div.product-item-images_area { float:left; width:420px; }
+div.product-item-images_area div.product-photo { width:420px; border:10px solid #eee; }
+div.product-item-images_area div.product-photos { border:none; }
+div.product-item-info_area { float:right; width:276px; padding-top:10px; padding-left:0px; padding-right:0px; font-style:italic; }
+div.product-item-description_area { clear:both; font-style:italic; }
+div.product-item-head { flat:left; border-bottom: 1px dashed #ccc; margin-bottom:4px; margin-top:10px; background:url(http://dl.dropbox.com/u/24245867/m_m/mm-icon.jpg) no-repeat top right;}
+div.product-item-info_area h2, h3, h4 { font-family: "Georgia", Times New Roman, Times, serif; font-style:italic; }
+div.product-item-head h1 { font-family: "Georgia", Times New Roman, Times, serif; font-size:34px; text-transform:lowercase; color:#000; font-style:italic; font-weight: normal;}
+
+div.product-item-info_area p.product-details { margin:0px; color:#ccc; font-style:italic; }
+
+/* Hack for BLOCK Issue. */
+body.hasnoitems div.content_area { display:none; }
+
+/* HTML Content */
+.html h1,
+.html h2 { margin-top:1em; margin-bottom:0.2em; }
+.html h3,
+.html h4 { margin-top:1em; margin-bottom:0.2em; }
+.html p,
+.html ul { margin-bottom:0.8em; }
+.html strong { font-weight:bold; }
+.html i, .html em { font-style:italic; }
+.html ul, ol { margin-left: 0; padding-left:2.6em; }
+.html li { margin:0; padding:0; list-style:circle; line-height:1.75em; }
+.html ul li { list-style:circle; }
+.html ol li { list-style:decimal-leading-zero; }
+.html hr { margin-top:10px; margin-bottom:10px; border-top:1px dotted #444; }
+
+.html fieldset ul { margin:0; padding:0; }
+.html fieldset legend { text-decoration:underline; font-size:125%; text-decoration:underline; }
+.html fieldset h3 { clear:both; margin:20px 0 0.4em 0; }
+.html fieldset h4 { margin:0.4em 0 1.2em 0; font-style:oblique; }
+.html fieldset li { list-style:none; clear:both; margin-bottom:0.45em; }
+.html fieldset li label { display:block; float:left; margin:0.8em 0 0.15em 0.15em; }
+.html fieldset li span { font-style:italic; }
+
+/* Copyright */
+div#copyright div.cite { float:left; font-size:0.9em; }
+div#copyright div.cartching { margin: 5px auto 5px auto; }
+
+/* Product Feature Carousel */
+
+div.also-like { background-color:none; height: 250px; border-top: 1px dotted #eee; }
+div.also-like h3 { font-size: 12px; text-transform: uppercase; color: #ccc; line-height: 0.05em; }
+
+div.product-list.featured-small div.product-listitem { width:180px; height:140px; margin-right:3px; padding:0; border:0; text-align:left; }
+div.product-list.featured-small div.product-listitem .product-photo { height:140px; border:10px solid #fbfbfb; }
+div.product-list.featured-small div.product-listitem .product-photo:hover { border-color:#ccc; }
+div.product-list.featured-small div.product-listitem .title { font-size: 10px; margin-top: 4px; overflow:hidden; display:block; color: #999; text-align:left; }
+div.product-list.featured-small div.product-listitem .price { font-size: 10px; margin-top:-15px; }
+
+
+/*div.product-list.featured-small div.hproduct product-listitem { width:140px; height:140px; margin:0; padding:0; border:0; }
+div.product-list.featured-small div.hproduct product-listitem .product-photo { height:140px; }
+div.product-list.featured-small div.hproduct product-listitem .title { font-size: 8px; }
+*/
+div.product-list.featured-small .list_carousel { position:relative; width:800px; margin:0 auto; }
+div.product-list.featured-small .list_carousel li { height:140px; }
+div.product-list.featured-small .list_carousel li { display:block; float:left; margin:0 30px; list-style:none; }
+
+div.product-list.featured-small div.product-listitem p { float:none; }
+div.product-list.featured-small div.product-listitem .price, div.product-list.featured-small div.product-listitem .title { text-align:center; }
+
+div.product-list.featured-small .list_carousel a#prev { left:-30px; }
+div.product-list.featured-small .list_carousel a#next { right:-30px; }
+
+#prev{ font-size:24px;}
+
+/* Page Message */
+div#pagemsg a.close { position:absolute; top:0; right:0; margin:12px 12px 0 0; text-align:right; width:40px; text-transform:lowercase; }
+div#pagemsg h3 { margin-top:12px; }
+div#pagemsg h3,
+div#pagemsg p { margin-left:20px; margin-right:40px; }
+div#pagemsg.msg-error { background:#FFCFCF; border:1px solid #E5A3A3; }
+div#pagemsg.msg-info { background:#FEFFDB; border:1px solid #FFDDB3; }
+div#pagemsg.msg-success { background:#E8FECD; border:1px solid #A9BF74; }
+
+/* Message */
+div.msg { clear:both; padding:3px 10px; border-style:solid; border-width:1px; }
+div.msg h3,
+div.msg p { margin:0; display:inline; font-size:100%; }
+div.msg h3 { font-weight:bold; margin-right:10px; }
+div.msg.info { border-color:#ccc; background:#FFFFAE; }
+div.msg.info h3 { color:#000; }
+div.msg.info p { color:#222; }
+
+/* Checkout Progress */
+div.checkoutprogress { overflow:auto; margin-left: auto; margin-right:auto; width:960px; _width:960px; _height:40px; background:#eee; padding:4px; }
+div.checkoutprogress ol { margin:0 0 0 30px; padding:0; }
+div.checkoutprogress ol li { float:left; display:inline-block; list-style:none; margin:10px; }
+
+body.yourinfo li#checkoutprogress-yourinfo span,
+body.yourinfo li#checkoutprogress-yourinfo span a,
+body.cart li#checkoutprogress-cartitems span,
+body.cart li#checkoutprogress-cartitems span a,
+body.payment li#checkoutprogress-paymentmethods span,
+body.payment li#checkoutprogress-paymentmethods span a,
+body.order li#checkoutprogress-receipt span,
+body.order li#checkoutprogress-receipt span a { color:#222; font-weight:bold; }
+
+body.yourinfo li#checkoutprogress-yourinfo span.step-num,
+body.cart li#checkoutprogress-cartitems span.step-num,
+body.payment li#checkoutprogress-paymentmethods span.step-num,
+body.order li#checkoutprogress-receipt span.step-num { font-style:italic; color: #999; }
+
+body.yourinfo li#checkoutprogress-yourinfo,
+body.order li#checkoutprogress-receipt,
+body.cart li#checkoutprogress-cartitems,
+body.payment li#checkoutprogress-paymentmethods { margin-left:30px; margin-right:30px; }
+
+div#cart-small {  position:relative; z-index:200; display:block; height: 32px; }
+div#cart-small1 {  position:relative; z-index:210; display:block; height: 32px; }
+div#cart-small1 h2 { font-family: "Georgia", Times New Roman, Times, serif; font-style:oblique; letter-spacing:0.05em; line-height:0.9; font-weight:normal; color:#000; }
+div#cart-small h2 { font-family: "Georgia", Times New Roman, Times, serif; font-style:oblique; letter-spacing:0.05em; line-height:0.9; font-weight:normal; color:#000; }

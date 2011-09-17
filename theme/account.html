@@ -1,0 +1,291 @@
+<!--/
+Cartching Template / Blogger Lite v1.0
+http://cartching.com | Copyright (c) Cartching, 2011
+/-->
+
+<!-- #EXTENDS file="theme-simple.html" -->
+
+
+<!-- #BLOCK for="headtitle_content" -->
+
+    <!-- #IF {{customer.loggedin}} -->
+<title>Your Account | {{store | html_encode}}</title>
+    <!-- #ELSE -->
+<title>Sign In | {{store | html_encode}}</title>
+    <!-- #ENDIF -->
+
+<!-- #ENDBLOCK -->
+
+
+
+<!-- #BLOCK for="pagetitle_area" -->
+
+    <!-- #IF {{customer.loggedin}} -->
+    <div class="pagetitle_area_cart">
+			<div id="pagetitle_cart">
+         <div class="container">
+            
+                <h1>Your Details</h1>
+
+            </div>
+</div>
+</div>
+    <!-- #ELSE -->
+    <!-- #ENDIF -->
+
+<!-- #ENDBLOCK -->
+
+
+
+<!-- #BLOCK for="content_area" -->
+
+
+<!-- #IF {{customer.loggedin}} -->
+<!-- #ELSE -->
+
+
+    <h2 class="signin">Sign In</h2>
+
+    <div class="account-signin">
+    <fieldset>
+        <legend>Sign In</legend>
+        <form method="post" name="accountlogin" id="accountlogin" action="/account/login">
+        <input type="hidden" name="returnurl" value="/shop/" />
+            <ul>
+                <li>
+                    <label>Your Username</label>
+                    <input name="username" type="text" id="username" class="text lrg required" title="Please provide your Username" />
+                </li>
+                <li>
+                    <label>Password</label>
+                    <input name="password" type="password" id="password" class="text password lrg required" title="Please provide your Password" />
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox" value="1" id="rememberme" name="rememberme" class="checkbox" title="Remember Me" />
+                    <label for="rememberme">Remember Me</label>
+                </li>
+                <li class="submit">
+                    <button name="login" type="submit" id="login" class="button login" title="Sign In">Sign In</button>
+                </li>
+            </ul>
+        </form>
+    </fieldset>
+    </div>
+
+     
+    <div class="account-forgotpassword">
+    <fieldset>
+        <legend>Lost Password</legend>
+        <p>We will email you your Signin details.</p>
+        <form method="post" name="accountsendpassword" id="accountsendpassword" action="/account/sendpassword">
+        <input type="hidden" name="returnUrl" value="/account/sendpassword?returnurl={{page.url}}" />
+        <ul>
+            <li>
+                <label>Your Email</label>
+                <input name="email" type="text" id="email" class="text lrg required" title="Please provide your Email Address" />
+            </li>
+            <li class="submit">
+                <button name="submit" type="submit" id="submit" class="button getpassword" title="Click to email your Account Details to Sign In.">Get</button>
+            </li>
+        </ul>
+        </form>
+    </fieldset>
+    </div>
+
+<!-- #IF {{cart.items.count}} -->
+    <h2 class="createaccount">Create an Account <a name="create" id="create"></a></h2>
+<!-- #ENDIF -->
+
+<!-- #ENDIF -->
+
+
+
+
+
+<form action="/account/update" method="post" name="accountform" id="accountform">
+<input type="hidden" name="returnurl" value="/account/" />
+    
+    
+    <div class="account-personal">
+    <fieldset>
+        <legend>Personal Details</legend>
+        <ul>
+            <li>
+                <label>Name</label>
+                <input name="Name" type="text" id="name" value="{{customer.name}}" class="text lrg required" title="Please provide your Name" />
+            </li>
+            <li>
+                <label>Email</label>
+                <input name="Email" type="text" id="email" value="{{customer.email}}" class="text lrg required" title="Please provide your Email" />
+                <span class="hint">name@email.com</span>
+            </li>
+            <li>
+                <label>Phone</label>
+                <input name="Phone" type="text" id="phone" value="{{customer.phone}}" class="text med" title="Please provide your Phone No." />
+            </li>
+        </ul>
+    </fieldset>
+    </div>
+
+
+
+    <div class="account-password">
+    <fieldset>
+        <legend>Password</legend>
+<ul>
+            <li>
+                <label for="password1">Your Password</label>
+                <input name="password1" type="password" id="password1" class="text password lrg required" title="Please provide your Password" />
+            </li>
+            <li>
+                <label for="password2">Confirm Password</label>
+                <input name="password2" type="password" id="password2" class="text password lrg required" title="Please confirm your Password" />
+            </li>
+        </ul>
+    </fieldset>
+    </div>
+
+
+    
+    <div class="account-billing">
+    <fieldset>
+        <legend>Billing details</legend>
+        <h4>Please address all invoices and receipts to</h4>
+        <ul>
+            <li>
+                <label for="billingaddress.street">Address Line 1:</label>
+                <input name="billingaddress.street" type="text" id="billingaddress.street" value="{{customer.billingaddress.street}}" class="text lrg required" title="Please provide your Street address, P.O. box, company name, c/o" />
+                <span class="hint">Street address, P.O. box, company name, c/o</span>
+            </li>
+            <li>
+                <label for="billingaddress.street2">Address Line 2:</label>
+                <input name="billingaddress.street2" type="text" id="billingaddress.street2" value="{{customer.billingaddress.street2}}" class="text lrg" title="Please provide your Apartment, suite, unit, building, floor, etc." />
+                <span class="hint">Apartment, suite, unit, building, floor, etc.</span>
+            </li>
+            <li>
+                <label for="billingaddress.city">City</label>
+                <input name="billingaddress.city" type="text" id="billingaddressCity" value="{{customer.billingaddress.city}}" class="text lrg required" title="Please provide your City" />
+            </li>
+            <li>
+                <label for="billingaddress.state">State/Province/Region</label>
+                <input name="billingaddress.state" type="text" id="billingaddress.state" value="{{customer.billingaddress.state}}" class="text med required" title="Please provide your State/Province/Region" />
+            </li>
+            <li>
+                <label for="billingaddress.countrycode">Country:</label>
+                <select name="billingaddress.countrycode" id="billingaddress.countrycode" class="select lrg required" title="Country">
+                    <option>&nbsp;</option>
+                     {{Countries|html_options(Name,countrycode,Customer.billingaddress.Country.countrycode)}}
+                </select>
+            </li>
+            <li>
+                <label for="billingaddress.postcode">ZIP/Postal Code:</label>
+                <input name="billingaddress.postcode" type="text" id="billingaddress.postcode" value="{{customer.billingaddress.postcode}}" class="text sml required" title="Please provide your ZIP/Postal Code" />
+            </li>
+            <li class="checkbox">
+                <input id="ShipTobillingaddress" type="checkbox" name="ShipTobillingaddress" onclick="enableshippingaddress(!this.checked);" value="true" {{customer.shiptobillingaddress | default('true') | html_checked}} />
+                <label for="ShipTobillingaddress">Use my Billing address for Shipping</label>
+            </li>
+        </ul>
+    </fieldset>
+    </div>
+
+
+    
+    <div class="account-shipping" style="{{customer.shiptobillingaddress | default('true') | if('display:none','')}}">
+    <fieldset>
+        <legend>Shipping Address</legend>
+        
+        <h4>Complete only if different to the Billing Address</h4>
+        
+        <ul>
+            <li>
+                <label for="shippingaddress.street">Address Line 1:</label>
+                <input name="shippingaddress.street" type="text" id="shippingaddress.street" value="{{customer.shippingaddress.street}}" class="text lrg" title="Please provide your Street address, P.O. box, company name, c/o" />
+                <span class="hint">Street address, P.O. box, company name, c/o</span>
+            </li>
+            <li>
+                <label for="shippingaddress.street2">Address Line 2:</label>
+                <input name="shippingaddress.street2" type="text" id="shipaddress2" value="{{customer.shippingaddress.street2}}" class="text lrg" title="Please provide your Apartment, suite, unit, building, floor, etc." />
+                <span class="hint">Apartment, suite, unit, building, floor, etc.</span>
+            </li>
+            <li>
+                <label for="shippingaddress.city">City</label>
+                <input name="shippingaddress.city" type="text" id="shippingaddress.city" value="{{customer.shippingaddress.city}}" class="text lrg" title="Please provide your City" />
+            </li>
+            <li>
+                <label for="shippingaddress.state">State/Province/Region</label>
+                <input name="shippingaddress.state" type="text" id="shippingaddress.state" value="{{customer.shippingaddress.state}}" class="text med" title="Please provide your State/Province/Region" />
+            </li>
+            <li>
+                <label for="shippingaddress.countrycode">Country:</label>
+                <select name="shippingaddress.countrycode" id="shippingaddress.countrycode" class="select lrg required" title="Country">
+                    <option>&nbsp;</option>
+                    {{Countries|html_options(Name,countrycode,Customer.shippingaddress.Country.countrycode)}}
+                </select>
+            </li>
+            <li>
+                <label for="shippingaddress.postcode">ZIP/Postal Code:</label>
+                <input name="shippingaddress.postcode" type="text" id="shippingaddress.postcode" value="{{customer.shippingaddress.postcode}}" class="text sml" title="Please provide your ZIP/Postal Code" />
+            </li>
+        </ul>
+    </fieldset>
+    </div>
+           
+
+    <div class="clear"></div>
+
+
+    <!-- #IF {{customer.loggedin}} -->
+        
+        <div class="submit account save">
+            <button type="submit" class="button updateaccount" title="Update your Account Details">Update Your Account</button>
+        </div>
+    
+    <!-- #ELSE -->
+    
+        <div class="submit account create">
+<p>If the address details are not entered correctly, your package may be returned as undeliverable.</p>
+            <button type="submit" class="button createaccount" title="Create your Account">Create Account</button>
+        </div>
+    
+    <!-- #ENDIF -->
+
+
+</form>
+
+
+<!-- #IF {{cart.items.count}} -->
+<!-- #ENDIF -->
+
+
+<!-- #ENDBLOCK -->
+
+
+
+
+<!-- #BLOCK for="script_content" -->
+<!-- #IF {{cart.items.count}} -->
+<script type="text/javascript">
+<!--
+
+// Show Hide Billing
+function enableshippingaddress(visible) {
+var jShipField = $('.account-shipping');
+if (visible) {
+jShipField.show();
+} else {
+jShipField.hide();
+}
+}
+
+//
+function Enableshippingaddress(theForm, enabled) {
+var shippingFields = document.getElementById("account-shipping");
+if (shippingFields)
+shippingFields.style.display = enabled ? "" : "none";
+}
+
+-->
+</script>
+<!-- #ENDIF -->
+<!-- #ENDBLOCK -->
