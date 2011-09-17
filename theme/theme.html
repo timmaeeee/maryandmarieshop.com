@@ -145,10 +145,10 @@
                         <ul class="buttons">
                             <li><a href="/cart/" class="button viewcart" title="View Cart and Checkout">View Cart</a></li>
                             <li><a href="/checkout/" class="button checkout" title="Checkout">Checkout</a></li>
-                            <!-- #IF {{customer.logged_in}} -->
+                            <!-- #IF {{customer.loggedin}} -->
    	                            <li><a href="/account/" class="button account">My Account</a></li>
     	                        <li><a href="/orders/" class="button orders">My Orders</a></li>
-    	                        <li><a href="#" class="button logout">Log out</a></li>
+    	                        <li><a href="/account/logout?returnurl={{page.url}}" class="button logout">Log out</a></li>
     	                    <!-- #ELSE -->
    	                            <li><a href="/account/" class="button login">Log in</a></li>
     	                        <li><a href="/account/#create" class="button signup">Sign up</a></li>
@@ -159,10 +159,10 @@
 
                     	<h3>Empty Cart!</h3>
 						<ul class="buttons">
-                    		<!-- #IF {{customer.logged_in}} -->
+                    		<!-- #IF {{customer.loggedin}} -->
    	                            <li><a href="/account/" class="button account">My Account</a></li>
     	                        <li><a href="/orders/" class="button orders">My Orders</a></li>
-    	                        <li><a href="#" class="button logout">Log out</a></li>
+    	                        <li><a href="/account/logout?returnurl={{page.url}}" class="button logout">Log out</a></li>
     	                    <!-- #ELSE -->
    	                            <li><a href="/account/" class="button login">Log in</a></li>
     	                        <li><a href="/account/#create" class="button signup">Sign up</a></li>
